@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History of Bandung feedback form</title>
+</head>
+<body>
+    <!-- Site Navigation -->
+   <nav>
+    <h2>List of pages:</h2>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+    </ul>
+    <ol>
+      <li><a href="history.html">History</a></li>
+      <li><a href="geography.html">Geography</a></li>
+      <ol type="a">
+        <li><a href="architecture.html">Architecture</a></a></li>
+        <li><a href="environmental problems.html">Environmental problems</a></li>
+        <li><a href="climate.html">Climate</a></li>
+      </ol>
+      <li>
+        <a href="feedback form.html">Feedback form (you are here)</a>
+      </li>
+    </ol>
+   </nav>
+   <!-- Main content -->
+   <main>
+    <article>
+        <section>
+            <h2>Feedback</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Feedback form</legend>
+                    <!-- Name -->
+                    <label for="name">Your name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br>
+                    <br>
+                    <!-- Email -->
+                    <label for="email">Your email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <br>
+                    <br>
+                    <!-- Radio buttons -->
+                    <p>How would you rate your overall experience using Rofi's website?</p>
+                    <label><input type="radio" name="experience" value="excellent" required> Excellent</label>
+                    <br>
+                    <label><input type="radio" name="experience" value="good"> Good</label>
+                    <br>
+                    <label><input type="radio" name="experience" value="average"> Average</label>
+                    <br>
+                    <label><input type="radio" name="experience" value="poor"> Poor</label>
+                    <br>
+                    <br>
+                    <!-- Checkboxes -->
+                    <p>What did you like about the website? (select all that applies to you)</p>
+                    <label><input type="checkbox" name="likes[]" value="design"> Design</label>
+                    <br>
+                    <label><input type="checkbox" name="likes[]" value="navigation"> Easy navigation</label>
+                    <br>
+                    <label><input type="checkbox" name="likes[]" value="content"> Content</label>
+                    <br>
+                    <label><input type="checkbox" name="likes[]" value="speed"> Speed</label>
+                    <br>
+                    <br>
+                    <!-- Dropdown -->
+                    <label for="improvement">Which area needs the most improvement?</label>
+                    <br>
+                    <select id="improvement" name="improvement">
+                        <option value="design">Design</option>
+                        <option value="navigation">Navigation</option>
+                        <option value="content">Content</option>
+                        <option value="speed">Speed</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Textarea -->
+                    <label for="comments">Additional comments:</label>
+                    <br>
+                    <textarea id="comments" name="comments" rows="5" cols="45" placeholder="Write your comments here..."></textarea>
+                    <br>
+                    <br>
+                    <!-- Submit -->
+                     <button type="submit">Submit feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+   </main>
+</body>
+</html>
